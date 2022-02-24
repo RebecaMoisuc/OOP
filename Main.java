@@ -1,16 +1,13 @@
-package ro.ItSchool.incapsulation;
-
-import jdk.swing.interop.SwingInterOpUtils;
-
-import java.util.Scanner;
+package ro.ItSchool.incapsulation.rectangle;
 
 public class Main {
     public static void main(String[] args) {
 
+        Rectangle rectangle = new Rectangle();
+        rectangle.setWidth(1);
+        rectangle.setLength(1);
 
-        Scanner sc = new Scanner(System.in);
-        double area = sc.nextDouble();
-        Circle circle = new Circle(area);
-        System.out.printf("Return the area of the circle: %.2f ", circle.getArea());
+        System.out.println("Get area of rectangle: " + rectangle.getArea());
+        System.out.println("Get perimeter of rectangle: " + rectangle.getPerimeter());
     }
 }
